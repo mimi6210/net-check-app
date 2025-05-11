@@ -1,0 +1,95 @@
+/* 全体の背景やフォント設定 */
+body {
+  font-family: "Segoe UI", "Yu Gothic", sans-serif;
+  background: linear-gradient(to bottom right, #ffe4ec, #ffffff);
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* タイトルや見出し */
+h1, h2 {
+  text-align: center;
+  color: #d81b60;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* ボタンのデザイン */
+button {
+  display: block;
+  margin: 1em auto;
+  padding: 1em 2em;
+  background-color: #ec407a;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(236, 64, 122, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ad1457;
+  transform: scale(1.05);
+}
+
+/* 質問と結果の枠 */
+#questionArea, #resultArea, div {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 2em 3em;
+  background-color: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+/* リストの装飾（アドバイスなど） */
+ul {
+  text-align: left;
+  padding-left: 1.5em;
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+/* スマホ対応（レスポンシブ） */
+@media (max-width: 600px) {
+  body {
+    padding: 1em;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p, button {
+    font-size: 1em;
+  }
+
+  #questionArea, #resultArea, div {
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  button {
+    width: 90%;
+  }
+}
+#passwordResult {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+}
